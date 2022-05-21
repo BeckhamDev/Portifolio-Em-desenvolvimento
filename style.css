@@ -5,6 +5,13 @@
     padding: 0px;
     margin: auto;
 }
+:root{
+    --cor0: #113859;
+    --cor1: #275D8C;
+    --cor2: #73A9D9;
+    --cor3: #9BDAF2;
+    --cor4: #42858C;
+}
 body{
     background-color:gray;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,11 +19,12 @@ body{
 }
 
 header{
-    background-color: lightgrey;
+    background-color: var(--cor2);
     text-align: center;
     font-weight: bolder;
     width: 820px; 
     padding-top: 20px;
+    color: black;
 }
 
 div.myself{
@@ -35,6 +43,9 @@ div.project{
     width: 820px;
     height: 500px;
     margin-top: 20px;
+}
+div.project>h1{
+    padding: 10px;
 }
 div.fake{
     width: 150px;
