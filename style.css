@@ -13,18 +13,39 @@
     --cor4: #42858C;
 }
 body{
-    background-color:gray;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+    background-color: var(--cor4);
 }
 
 header{
     background-color: var(--cor2);
     text-align: center;
     font-weight: bolder;
+    font-size: 1.5em;
     width: 820px; 
-    padding-top: 20px;
+    padding-top: 40px;
     color: black;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+
+}
+
+nav{
+    background-color: var(--cor1);
+    width: 820px;
+    font-size: 1.3em;
+    padding-top: 15px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.241);
+}
+
+nav>a{
+    text-decoration: none;
+    padding: 8px;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+nav>a:hover{
+    background-color:#73a9d984;
+
 }
 
 div.myself{
@@ -32,6 +53,18 @@ div.myself{
     padding: 10px;
     width: 800px;
     margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.241);
+}
+
+div.myself>h1{
+    background-image: linear-gradient(to right, var(--cor4),#9bd9f24d );
+    padding: 6px;
+}
+
+div.myself > p{
+    text-align: justify;
+    font-size: 20px ;
+    padding-top: 5px;
 }
 div.myself > img{
     width: 500px;
@@ -40,12 +73,14 @@ div.myself > img{
 }
 div.project{
     background-color: lightgray;
-    width: 820px;
+    width: 800px;
     height: 500px;
     margin-top: 20px;
+    padding: 10px;
 }
 div.project>h1{
-    padding: 10px;
+    background-image: linear-gradient(to right, var(--cor4),#9bd9f24d );
+    padding: 6px;
 }
 /* Inserindo o Card */
 /* From uiverse.io by @alexruix */
@@ -68,6 +103,41 @@ div.project>h1{
     background: #0a3394;
     background: linear-gradient(to top, #0a3394, #4286f4);
 }
+.card-image>p{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: bolder;
+}
+/* From uiverse.io */
+button {
+    margin-left: 3px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
    
    /*Description */
 .card-description {
@@ -101,8 +171,35 @@ div.project>h1{
 .card:hover .card-description {
     transform: translateY(100%);
 }
-   
-   
+
+div.contatos{
+    background-color: lightgray;
+    padding: 10px;
+    width: 800px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.241)
+}
+
+div.contatos > h1{
+    background-image: linear-gradient(to right, var(--cor4),#9bd9f24d );
+    padding: 6px;
+}
+div.contatos > a{
+    padding: 5px;
+}
+div.contatos > a > img{
+    margin: auto;
+    display: block;
+}
+div.contatos > img{
+    margin: auto;
+    display: block;
+}
+div.contatos > p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
 footer{
     background-color: black;
     color: white;
