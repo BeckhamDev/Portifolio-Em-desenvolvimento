@@ -6,14 +6,14 @@
     margin: auto;
 }
 :root{
-    --cor0: #113859;
-    --cor1: #275D8C;
-    --cor2: #73A9D9;
-    --cor3: #9BDAF2;
-    --cor4: #42858C;
+    --cor0: #0A0036;
+    --cor1: #241954;
+    --cor2: #130069;
+    --cor3: #382782;
+    --cor4: #2100B5;
 }
 body{
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
 }
 
 header{
@@ -24,7 +24,7 @@ header{
     width: 820px; 
     padding-top: 40px;
     color: black;
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+
 
 }
 
@@ -49,22 +49,22 @@ nav>a:hover{
 }
 
 div.myself{
-    background-color: lightgray;
-    padding: 10px;
     width: 800px;
     margin-top: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.241);
 }
 
-div.myself>h1{
+div.apresentacao >h1{
     background-image: linear-gradient(to right, var(--cor4),#9bd9f24d );
     padding: 6px;
+    text-align: center;
 }
 
-div.myself > p{
-    text-align: justify;
+div.apresentacao > p{
+    text-align: center;
     font-size: 20px ;
     padding-top: 5px;
+    background-color: lightgray;
+    padding: 10px;
 }
 div.myself > img{
     width: 500px;
@@ -74,115 +74,49 @@ div.myself > img{
 div.project{
     background-color: lightgray;
     width: 800px;
-    height: 500px;
-    margin-top: 20px;
-    padding: 10px;
+    height: 800px;
 }
 div.project>h1{
     background-image: linear-gradient(to right, var(--cor4),#9bd9f24d );
     padding: 6px;
+    text-align: center;
 }
-/* Inserindo o Card */
-/* From uiverse.io by @alexruix */
-.card {
-    height: 254px;
-    width: 190px;
+div.repository{
+    width: 260px;
+    height: 215px;
+    background-color: lightblue;
     position: relative;
-    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    border-radius: 1em;
-    box-shadow: 0 0 20px 8px #d0d0d0;
-    ;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.222);
+    border-radius: 5px;
 }
-   
-    /*Image*/
-.card-image {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background: #0a3394;
-    background: linear-gradient(to top, #0a3394, #4286f4);
-}
-.card-image>p{
+
+div.repository > h2{
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    color: white;
-    font-weight: bolder;
+
 }
-/* From uiverse.io */
-button {
-    margin-left: 3px;
-    padding: 1.3em 3em;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  button:hover {
-    background-color: #23c483;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
-    transform: translateY(-7px);
-  }
-  
-  button:active {
-    transform: translateY(-1px);
-  }
-   
-   /*Description */
-.card-description {
-    display: flex;
-    position: absolute;
-    gap: 1em;
-    flex-direction: column;
-    background-color: #f5f5f5;
-    height: 70%;
-    bottom: 0;
-    border-radius: 1em 1em 0 0;
-    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-    padding: 1rem;
-}
-   
-   /*Text*/
-.text-title {
-    font-size: 1.4em;
-    font-weight: 700;
-}
-   
-.text-body {
-    font-size: 1em;
-    line-height: 150%;
+div.repository > p{
     text-align: center;
+    padding: 3px;
 }
-   
-   
-   /* Hover states */
-   
-.card:hover .card-description {
-    transform: translateY(100%);
+div.repository > button{
+    padding: 10px;
+    border-radius: 5px;
+    border-color: blue;
+    margin-left: 80px;
 }
 
 div.contatos{
     background-color: lightgray;
-    padding: 10px;
     width: 800px;
-    margin-top: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.241)
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.241);
 }
 
 div.contatos > h1{
     background-image: linear-gradient(to right, var(--cor4),#9bd9f24d );
     padding: 6px;
+    text-align: center;
 }
 div.contatos > a{
     padding: 5px;
